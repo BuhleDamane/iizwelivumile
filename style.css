@@ -1,0 +1,26 @@
+nav{
+    height: 100px;
+}
+.navbar-brand{
+    color: rgb(5, 62, 5);
+    font-family: "Playfair Display", serif;
+}
+h1{
+    color: red !important;
+}
+li{
+    color: pink;
+}
+.logo{
+    width: 190px;
+    height: 115px;
+}
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.logo-span{
+    text-wrap: wrap;
+    font-size: 25px;
+}
