@@ -1,4 +1,3 @@
-// Image Slideshow
 let slideIndex = 0;
 const slides = document.querySelectorAll('.mySlides');
 
@@ -6,11 +5,15 @@ function showImageSlides() {
     slides.forEach((slide, index) => {
         slide.style.display = (index === slideIndex) ? 'block' : 'none';
     });
+}
+
+function autoSlideShow() {
     slideIndex++;
     if (slideIndex >= slides.length) {
         slideIndex = 0;
     }
-    setTimeout(showImageSlides, 5000); // Change image every 5 seconds
+    showImageSlides();
+    setTimeout(autoSlideShow, 5000); 
 }
 
 function changeImageSlide(n) {
@@ -38,11 +41,21 @@ function showTextSlides() {
         currentTextSlide = 0; 
     }
 
-    setTimeout(showTextSlides, 5000); // Change text every 5 seconds
+    setTimeout(showTextSlides, 5000); 
 }
 
-// Initialize both slideshows when the DOM is fully loaded
+
 document.addEventListener('DOMContentLoaded', (event) => {
     showImageSlides();
+    autoSlideShow();
     showTextSlides();
+});
+
+
+document.querySelector('.prev').addEventListener('click', () => {
+    changeImageSlide(-1);
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+    changeImageSlide(1);
 });
