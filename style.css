@@ -4,7 +4,7 @@ nav{
     height: 100px;
     font-family: "Ubuntu", sans-serif;
    width: 100%;
-   position:absolute;
+   
   
    
 }
@@ -389,10 +389,10 @@ li{
     margin: 10px;
 }
 .secondButton{
-    margin-left: 19px;
+    margin-left: 13px;
     font-size: 12px;
     width: 150px;
-    height: 40px;
+    height: 35px;
     border: 0;
 }
 .bIcon-span{
