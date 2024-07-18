@@ -435,9 +435,16 @@ li{
 
 .topFooter{
     display: flex;
-    justify-content: center ;
+    justify-content: space-evenly ;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+.topFooter p{
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+}
+.inputText{
+    width: 300px;
 }
 .bottomFooter{
     display: flex;
