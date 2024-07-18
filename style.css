@@ -398,3 +398,65 @@ li{
 .bIcon-span{
     margin-left: 20px;
 }
+.search{
+    color: white;
+    font-size: 20px;
+}
+.elijah{
+    width: 100%;
+    height: 100vh;
+}
+.projectsOverlay{
+    translate: transform (-50%, -50%);
+    top: 301%;
+    left: 10%;
+    position: absolute;
+}
+.projectsText{
+    font-size: 60px;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+}
+.projectsOverlay a{
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+.chevrons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92px; 
+    height: 80px; 
+}
+
+.topFooter{
+    display: flex;
+    justify-content: center ;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.bottomFooter{
+    display: flex;
+    justify-content: space-between;
+}
+.chevronLeft i, .chevronRight i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    color: #fff;
+    background-color: #ffffff57;
+    font-size: 15px;
+    transition: transform 0.2s; 
+}
+.chevronLeft i:hover, .chevronRight i:hover {
+    color: red;
+    transform: scale(1.1); 
+}
