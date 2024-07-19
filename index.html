@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/b55e88e583.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg " id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/il3.png" class="logo" alt=""><span class="logo-span"><span class="top-span">Izwe Livumile</span> <span class="bottom-span">(PTY) LTD</span></span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,44 +40,51 @@
                 <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Portfolio</a>
+                <a class="nav-link" href="#">Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Insights & News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+           <a href="#"><span class="search"><i class="fa-solid fa-magnifying-glass"></i></span></a> 
           </div>
         </div>
       </nav>
       <div class="slideshow-container">
         <div class="slideshow">
-          <div class="mySlides fade overlay">
+          <div class="mySlides fade">
+            
             <img src="images/pexels-rezwan-1078884.jpg" alt="image1">
-            <div class="text1 text">Building 
-              <br>Dreams,<br> One Brick 
-              <br>at a Time!</div>
+            <div class="text5"></div>
+            <div class="text1 text">
+              <p>Building 
+                <br>Dreams,<br> One Brick 
+                <br>at a Time!</div></p>
           </div>
           <div class="mySlides fade">
             <img src="images/pexels-500photos-com-15338-93400.jpg" alt="image2">
-            <div class="text2 text">Excellence in Every <br>Foundation,<br> Precision in Every <br> Detail!</div>
+            <div class="text6"></div>
+            <div class="text2 text">
+              <p>Excellence in Every <br>Foundation,<br> Precision in Every <br> Detail!</p></div>
           </div>
           <div class="mySlides fade">
             <img src="images/pexels-bidvine-517980-1249611.jpg" alt="image3">
-            <div class="text3 text">Proudly Level 1 <br> B-BBEE and 100% <br> Black Owned!</div>
+            <div class="text7"></div>
+            <div class="text3 text"> <p>Proudly Level 1 <br> B-BBEE and 100% <br> Black Owned!</p></div>
           </div>
           <div class="mySlides fade">
             <img src="images/pexels-umaraffan499-190417.jpg" alt="image4">
-            <div class="text4 text">Mastering Every <br>Aspect of Construction, <br>From Start 
-            <br> To Finish!</div>
+            <div class="text8"></div>
+            <div class="text4 text"> <p>Mastering Every <br>Aspect of Construction, <br>From Start 
+              <br> To Finish!</p></div>
           </div>
         </div>
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        <div class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+        <a href="#roww"><div class="arrow"><i class="fa-solid fa-arrow-down"></i></div></a>
       </div>
       <div class="who">
         <div class="container">
@@ -101,21 +108,21 @@
       
   <div id="projects">
     <div class="work-list">
-      <div class="work">
+      <div class="work work1">
         <a href="#"><img src="images/engineering1(1).jpg" class="work-img" alt=""></a>
           <p class="languages">BUILDING AND CIVIL ENGINEERING</p>
             </div>
                
-      <div class="work">
+      <div class="work work1">
         <a href="#"> <img src="images/engineering2(1).jpg" class="work-img" alt=""></a>
           <p class="languages">ROADS AND EARTHWORKS</p>
             </div>
-      <div class="work">
+      <div class="work work1">
         <a href="#"><img src="images/engineering3.jpg" class="work-img" alt=""></a>
           <p class="languages">DESIGN AND <span class="work-span"> CONSTRUCT PROJECTS</span></p>
             </div>
         
-        <div class="work">
+        <div class="work work1">
        <a href="#"><img src="images/construction material.jpg" class="work-img" alt=""></a> 
     <p class="languages">CONSTRUCTION MATERIAL</p>
        </div>
@@ -127,11 +134,11 @@
             </div>
             <div class="col-4">
            
-              <h1 class="h1-second">
+              <h1 class="h1-second" id="roww">
                 The Izwe Livumile Way
               </h1>
               <p class="divider second"></p>
-              <p class="p-second">Our culture and shared values are enshrined in our Code of Conduct. They are a set of guiding principles known collectively as THE WBHO WAY.</p>
+              <p class="p-second">Our culture and shared values are enshrined in our Code of Conduct. They are a set of guiding principles known collectively as THE IZWE LIVUMILE WAY!</p>
             </div>
             <div class="col-4">
               <ul>
@@ -153,7 +160,7 @@
         <div class="projectsText">
           <p>The Elijah 
           <br>
-          barayi Project</p>
+          Barayi Project</p>
         </div>
         <a href="#">View Project</a>
         <br>
@@ -169,52 +176,57 @@
       <div class="topFooter">
         <p>Sign up to our newsletter</p>
         <form>
-          <input type="text" class="inputText" placeholder="Email">
+          <input type="text" class="inputText" placeholder="Email" required>
         <input type="submit" class="inputButton" placeholder="Submit">
         </form>
       </div>
-      <hr>
+      <hr class="middleHr">
       <div class="middleFooter">
-        <div class="container">
-          <div class="row">
+        <div class="container con">
+          <div class="row" id="row">
+            
             <div class="col-4">
               <h1>
-                Looking for something else?
+                Head Office - Address
               </h1>
-              <ul>
-               <a href="#"><li>Our Company</li></a> 
-                <a href="#"><li>Sustainability</li></a>
-                <a href="#"><li>Careers</li></a>
-              </ul>
-              <ul>
-                <a href="#"><li>Investors</li></a>
-                <a href="#"><li>Testimonials</li></a>
-                <a href="#"><li>Our Clients</li></a>
-              </ul>
-            </div>
-            <div class="col-4">
-              <h1>
-                Head Office Address
-              </h1>
-              <p>
-                53 Andries Street
+              <p class="address">
+                Khutsong South
                 <br>
-                Wynberg
+                Carletonville
                 <br>
                 Johannesburg
                 <br>
                 South Africa
                 <br>
-                2090
+                2499
               </p>
             </div>
             <div class="col-4">
               <h1>
-                Head Office Contact Details
+                Head Office Contact - Details
               </h1>
-              <p>TEL: (+27)00 000 0000</p>
-              <p>FAX: (+27)00 000 0000</p>
-              <p>EMAIL: admin@izwelivumile.ac.za</p>
+              <p class="contactDetails"> <span class="contact">TEL</span>: (+27)00 000 0000</p>
+              <p class="contactDetails"> <span class="contact">FAX</span>: (+27)00 000 0000</p>
+              <p class="contactDetails"> <span class="contact">EMAIL</span>: admin@izwelivumile.ac.za</p>
+            </div>
+            <div class="col-4">
+              <h1 class="something">
+                Looking for something else?
+              </h1>
+              <div class="ul"> 
+                <ul>
+                <a href="#"><li>Our Company</li></a> 
+                 <a href="#"><li>Sustainability</li></a>
+                 <a href="#"><li>Careers</li></a>
+               </ul>
+              
+                <ul>
+                <a href="#"><li>Investors</li></a>
+                <a href="#"><li>Testimonials</li></a>
+                <a href="#"><li>Our Clients</li></a>
+              </ul>
+            </div>
+              
             </div>
           </div>
         </div>

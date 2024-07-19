@@ -1,15 +1,16 @@
 
-/* Navbar opens */
+
 nav{
     height: 100px;
     font-family: "Ubuntu", sans-serif;
    width: 100%;
-   
-  
-   
+   background-color: rgba(0, 128, 0, 0.462);
+    position: fixed;
+   transition: background-color 0.3s ease;
+   z-index: 1000;
 }
 .navbar-brand{
-    color: rgb(5, 85, 5);
+    color: rgb(9, 79, 9);
     display: flex;
     
     }
@@ -35,6 +36,9 @@ nav{
 }
 .nav-link{
     color: white;
+}
+.nav-link:hover{
+    color: rgb(9, 79, 9);
 }
 .active{
     color: orange;
@@ -88,9 +92,13 @@ nav{
     height: 100%;
     object-fit: cover;
 }
+.text{
+    position: relative;
+    z-index: 1;
+}
 .text1 {
-    position: absolute;
-    bottom: 300px;
+    position: relative;
+    bottom: 350px;
     left: 150px;
     color: white;
     font-size: 50px;
@@ -99,6 +107,28 @@ nav{
     font-family: "Ubuntu", sans-serif;
     line-height: 1;
     font-weight: 600;
+    margin-left: 10px;
+    width: 20%;
+}
+.text5{
+    position: absolute;
+    bottom: 100px;
+    left: 140px;
+    width: 22%;
+    height: 300px;
+    background-color: rgb(9, 79, 9);
+    z-index: 2;
+    animation: slide-out 1.5s forwards;
+}
+@keyframes slide-out{
+    0%{
+        left: 0;
+        width: 32%;
+    }
+    100%{
+        left: 32%;
+        width: 0;
+    }
 }
 .text2 {
     position: absolute;
@@ -112,6 +142,26 @@ nav{
     line-height: 1;
     font-weight: 600;
 }
+.text6{
+    position: absolute;
+    bottom: 200px;
+    margin-left: 550px;
+    width: 22%;
+    height: 300px;
+    background-color: rgb(9, 79, 9);
+    z-index: 2;
+    animation: slide 1.5s forwards;
+}
+@keyframes slide{
+    0%{
+        left: 0;
+        width: 40%;
+    }
+    100%{
+        left: 40%;
+        width: 0;
+    }
+}
 .text3 {
     position: absolute;
     bottom: 100px;
@@ -123,6 +173,26 @@ nav{
     font-family: "Ubuntu", sans-serif;
     line-height: 1;
     font-weight: 600;
+}
+.text7{
+    position: absolute;
+    bottom: 80px;
+    margin-left: 750px;
+    width: 22%;
+    height: 200px;
+    background-color: rgb(9, 79, 9);
+    z-index: 2;
+    animation: slide-in 1.5s forwards;
+}
+@keyframes slide-in{
+    0%{
+        left: 0;
+        width: 45%;
+    }
+    100%{
+        left: 45%;
+        width: 0;
+    }
 }
 .text4 {
     position: absolute;
@@ -136,6 +206,26 @@ nav{
     line-height: 1;
     font-weight: 600;
     
+}
+.text8{
+    position: absolute;
+    bottom: 180px;
+    margin-left: 350px;
+    width: 22%;
+    height: 300px;
+    background-color: rgb(9, 79, 9);
+    z-index: 2;
+    animation: slide-away 1.5s forwards;
+}
+@keyframes slide-away{
+    0%{
+        left: 0;
+        width: 47%;
+    }
+    100%{
+        left: 47%;
+        width: 0;
+    }
 }
 .text.active {
     background-color: rgba(0, 0, 0, 0.5); 
@@ -178,22 +268,21 @@ a{
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 10s;
     animation-name: fade;
-    animation-duration: 5s;
+    animation-duration: 10s;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 5}
+    from {opacity: .9} 
+    to {opacity: 9}
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 5}
+    from {opacity: .9} 
+    to {opacity: 9}
 }
 
-/* Navbar closes */
 .arrow{
     position: absolute;
     transform: translate(-50%, -50%);
@@ -224,8 +313,9 @@ a{
     border: 3px solid white;
     border-radius: 60%;
     cursor: pointer;
-    animation: arrowBounce 6s infinite; /* Add the animation here */
+    animation: arrowBounce 6s infinite; 
 }
+
 .arrow i{
     cursor: pointer;
     margin-top: 15px;
@@ -245,7 +335,7 @@ a{
     }
 }
 
-/* Animation to slide the overlay from left to right */
+
 @keyframes slideOverlay {
     0% {
         left: 0;
@@ -274,9 +364,9 @@ a{
 }
 .divider {
     height: 50px;
-    width: 4px; /* Adjust width as needed */
-    background-color: red;/* Change color as needed */
-    margin: 0 10px; /* Adjust margin to control spacing */
+    width: 4px; 
+    background-color: rgb(23, 203, 23);
+    margin: 0 10px; 
     margin-top: 60px;
 }
 .what{
@@ -285,6 +375,18 @@ a{
     margin-bottom: 30px;
     color: rgb(9, 53, 9);
     font-weight: 700;
+    z-index: 1;
+    opacity: 0;
+    animation: slide-down 10s forwards;
+}
+@keyframes slide-down {
+    0%{
+        transform: translateY(-150%);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .what-p{
     margin-top: -10px;
@@ -310,6 +412,22 @@ a{
     overflow: hidden;
     
 }
+.work1{
+    z-index: 1;
+    opacity: 0;
+    animation: slide-down1 10s forwards;
+}
+@keyframes slide-down1 {
+    0%{
+        transform: translateY(-30%);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 .work img{
     height: 450px;
     width: 100%;
@@ -365,18 +483,28 @@ a{
 }
 .h1-second{
     margin-top: -10px;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
 }
 .second{
     height: 65px;
     margin-top: 20px;
+    
 }
 
 .p-second{
+    font-family: "poppins", sans-serif;
+    font-style: italic;
+    color: #dedbdb;
     margin-left: 40px;
     margin-top: -73px;
+    font-weight: 100;
+
 }
 ul{
     margin-top: -10px;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
 }
 .fa-minus{
     font-weight: lighter;
@@ -394,6 +522,12 @@ li{
     width: 150px;
     height: 35px;
     border: 0;
+    margin-top: 20px;
+    border-radius: 2px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    color: #fff;
+    background-color: green;
 }
 .bIcon-span{
     margin-left: 20px;
@@ -440,15 +574,68 @@ li{
     margin-bottom: 30px;
 }
 .topFooter p{
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
 }
 .inputText{
-    width: 300px;
+    width: 430px;
+    font-family: "Ubuntu", sans-serif;
+    height: 45px;
+    padding: 12px 12px;
+
+}
+.inputButton{
+    width: 90px;
+    margin-left: -5px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    height: 35px;
+    background-color: green;
+    color: #fff;
+    border: 0;
+    height: 45px;
+}
+.middleHr{
+    width: 71%;
+    margin-left: 220px;
+}
+.ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ul ul li{
+    font-size: 15px;
+    margin-left: -50px;
+}
+.something {
+    white-space: nowrap;
+}
+.contact{
+    font-weight: 500;
+}
+.middleFooter h1{
+font-size: 25px;
+font-family: "Ubuntu", sans-serif;
 }
 .bottomFooter{
     display: flex;
     justify-content: space-between;
+}
+.address{
+    font-size: 15px;
+    margin-top: 40px;
+}
+.contactDetails{
+    font-size: 15px;
+    margin-top: 10px;
 }
 .chevronLeft i, .chevronRight i {
     display: flex;
@@ -466,4 +653,10 @@ li{
 .chevronLeft i:hover, .chevronRight i:hover {
     color: red;
     transform: scale(1.1); 
+}
+.links{
+    font-size: 12px;
+}
+.copyright{
+    font-size: 12px;
 }
