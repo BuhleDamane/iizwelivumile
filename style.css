@@ -1,5 +1,6 @@
 
-
+/*                        home starts                         */
+/*                        nav starts                          */
 nav{
     height: 100px;
     font-family: "Ubuntu", sans-serif;
@@ -9,11 +10,6 @@ nav{
    transition: background-color 0.3s ease;
    z-index: 1000;
 }
-.navbar-brand{
-    color: rgb(9, 79, 9);
-    display: flex;
-    
-    }
 .navbar{
     z-index: 10000;
     position: fixed;
@@ -21,6 +17,12 @@ nav{
     width: 100%;
 
 }
+.navbar-brand{
+    color: rgb(9, 79, 9);
+    display: flex;
+    
+    }
+
 .navbar-brand:hover{
     color: rgb(9, 79, 9);
 }
@@ -28,24 +30,6 @@ nav{
     width: 220px;
     height: 125px;
     margin-top: 10px;
-}
-.collapse{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-}
-.nav-link{
-    color: white;
-}
-.nav-link:hover{
-    color: rgb(9, 79, 9);
-}
-.active{
-    color: orange;
-}
-.nav-item{
-    font-size: 22px;
-    font-weight: 600;
 }
 .logo-span{
     text-wrap: wrap;
@@ -66,6 +50,83 @@ nav{
 .bottom-span{
     font-size: 18px;
 }
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.nav-item{
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(9, 79, 9);
+}
+nav ul li .nav-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+nav ul li :hover::after{
+    width: 100%;
+}
+.active{
+    color: orange;
+}
+.search-icon{
+    color: white;
+    font-size: 20px;
+}
+.nav .search-icon {
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.search-form {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position it below the nav bar */
+    right: 10px; /* Adjust for alignment */
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+.search-form input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.search-form button {
+    border: none;
+    background: green;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 65px;
+}
+
+.search-form button:hover {
+    background: #0056b3;
+}
+/*                           nav closes                   */
+/*                           slideshow starts             */
 
 
 .slideshow-container {
@@ -92,24 +153,38 @@ nav{
     height: 100%;
     object-fit: cover;
 }
-.text{
-    position: relative;
-    z-index: 1;
+@keyframes slideOverlay {
+    0% {
+        left: 0;
+        width: 100%;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
 }
-.text1 {
-    position: relative;
-    bottom: 350px;
-    left: 150px;
-    color: white;
-    font-size: 50px;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: "Ubuntu", sans-serif;
-    line-height: 1;
-    font-weight: 600;
-    margin-left: 10px;
-    width: 20%;
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 10s;
+    animation-name: fade;
+    animation-duration: 10s;
 }
+
+@-webkit-keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 9}
+}
+
+@keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 9}
+}
+
+
 .text5{
     position: absolute;
     bottom: 100px;
@@ -130,10 +205,10 @@ nav{
         width: 0;
     }
 }
-.text2 {
-    position: absolute;
-    bottom: 250px;
-    left: 650px;
+.text1 {
+    position: relative;
+    bottom: 350px;
+    left: 150px;
     color: white;
     font-size: 50px;
     padding: 10px;
@@ -141,6 +216,12 @@ nav{
     font-family: "Ubuntu", sans-serif;
     line-height: 1;
     font-weight: 600;
+    margin-left: 10px;
+    width: 20%;
+}
+.text{
+    position: relative;
+    z-index: 1;
 }
 .text6{
     position: absolute;
@@ -152,6 +233,7 @@ nav{
     z-index: 2;
     animation: slide 1.5s forwards;
 }
+
 @keyframes slide{
     0%{
         left: 0;
@@ -162,10 +244,10 @@ nav{
         width: 0;
     }
 }
-.text3 {
+.text2 {
     position: absolute;
-    bottom: 100px;
-    left: 950px;
+    bottom: 250px;
+    left: 650px;
     color: white;
     font-size: 50px;
     padding: 10px;
@@ -194,10 +276,10 @@ nav{
         width: 0;
     }
 }
-.text4 {
+.text3 {
     position: absolute;
-    bottom: 200px;
-    left: 400px;
+    bottom: 100px;
+    left: 950px;
     color: white;
     font-size: 50px;
     padding: 10px;
@@ -205,8 +287,8 @@ nav{
     font-family: "Ubuntu", sans-serif;
     line-height: 1;
     font-weight: 600;
-    
 }
+
 .text8{
     position: absolute;
     bottom: 180px;
@@ -226,6 +308,19 @@ nav{
         left: 47%;
         width: 0;
     }
+}
+.text4 {
+    position: absolute;
+    bottom: 200px;
+    left: 400px;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1;
+    font-weight: 600;
+    
 }
 .text.active {
     background-color: rgba(0, 0, 0, 0.5); 
@@ -252,6 +347,9 @@ nav{
     font-weight: 100;
     background-color: rgba(0, 0, 0, 0.513);
 }
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
 a{
     text-decoration: none;
 }
@@ -261,28 +359,6 @@ a{
     border-radius: 3px 0 0 3px;
     
 }
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 10s;
-    animation-name: fade;
-    animation-duration: 10s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .9} 
-    to {opacity: 9}
-}
-
-@keyframes fade {
-    from {opacity: .9} 
-    to {opacity: 9}
-}
-
 .arrow{
     position: absolute;
     transform: translate(-50%, -50%);
@@ -294,28 +370,6 @@ a{
     border-radius: 60%;
     cursor: pointer;
 }
-.arrow i{
-    cursor: pointer;
-    margin-top: 15px;
-    margin-left: 15px;
-    font-size: 20px;
-    height: 10px;
-    color: white;
-    line-height: 1;
-}
-.arrow{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    bottom: 50px;
-    right: 47%;
-    width: 50px;
-    height: 50px;
-    border: 3px solid white;
-    border-radius: 60%;
-    cursor: pointer;
-    animation: arrowBounce 6s infinite; 
-}
-
 .arrow i{
     cursor: pointer;
     margin-top: 15px;
@@ -334,29 +388,16 @@ a{
         transform: translate(-50%, -50%) translateY(-10px);
     }
 }
+/*                           slideshow ends                           */
+/*                                 who page starts                    */
 
-
-@keyframes slideOverlay {
-    0% {
-        left: 0;
-        width: 100%;
-    }
-    50% {
-        left: 0;
-        width: 100%;
-    }
-    100% {
-        left: 100%;
-        width: 0;
-    }
+.who{
+    margin-top: 50px;
 }
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.who{
-    margin-top: 50px;
 }
 .what-p1{
     font-family: "Ubuntu", sans-serif;
@@ -384,7 +425,6 @@ a{
     opacity: 1;
     transform: translateY(0);
 }
-
 .what-p{
     margin-top: -10px;
     margin-left: 50px;
@@ -392,6 +432,10 @@ a{
     font-family: "Ubuntu", sans-serif;
     font-weight: 100;
 }
+/*                                 who page ends                    */
+/*                                 projects page starts                    */
+
+
 #projects{
     padding: 30px 0;
     
@@ -408,6 +452,9 @@ a{
     border-radius: 10px;
     overflow: hidden;
     
+}
+.work:hover .layer{
+    height: 100%;
 }
 .work-list .work {
     opacity: 0;
@@ -443,6 +490,16 @@ a{
     border-radius: 10px;
     display: block;
 }
+.work-img a{
+    transition: transform 7s ease, filter 8s ease; 
+   
+}
+
+.work:hover img{
+    transform: scale(1.1) translateY(-1px);
+    transform: translateY(-10px) scale(1.1);
+    filter: brightness(0.8);
+}
 .languages{
     font-family: "poppins", sans-serif;
     font-weight: 700;
@@ -457,19 +514,6 @@ a{
 }
 .work-span{
     white-space: nowrap;
-}
-.work-img a{
-    transition: transform 7s ease, filter 8s ease; 
-   
-}
-
-.work:hover img{
-    transform: scale(1.1) translateY(-1px);
-    transform: translateY(-10px) scale(1.1);
-    filter: brightness(0.8);
-}
-.work:hover .layer{
-    height: 100%;
 }
 
 .backgroundProjects{
@@ -490,6 +534,8 @@ a{
     width: 420px;
     height: 280px;
 }
+
+/*                                 animated page starts                    */
 .h1-second{
     margin-top: -10px;
     color: #fff;
@@ -536,7 +582,6 @@ li{
     transform: translateY(0);
   }
   
-  /* Optional: add a slight delay between each item */
   .animated-list li:nth-child(1) {
     transition-delay: 0.1s;
   }
@@ -572,50 +617,9 @@ li{
 .bIcon-span{
     margin-left: 20px;
 }
-.search-icon{
-    color: white;
-    font-size: 20px;
-}
-.nav .search-icon {
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-    margin-left: 10px;
-}
 
-.search-form {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position it below the nav bar */
-    right: 10px; /* Adjust for alignment */
-    background-color: transparent;
-    padding: 10px;
-    
-}
-
-.search-form input {
-    border: 1px solid #ccc;
-    padding: 5px;
-    font-size: 16px;
-    width: 200px;
-    font-size: 12px;
-    font-family: "Ubuntu", sans-serif;
-}
-
-.search-form button {
-    border: none;
-    background: green;
-    color: white;
-    font-family: "Ubuntu", sans-serif;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 12px;
-    width: 65px;
-}
-
-.search-form button:hover {
-    background: #0056b3;
-}
+/*                                 animated page ends                    */
+/*                                 projects photo page starts            */
 .elijah{
     width: 100%;
     height: 100vh;
@@ -626,19 +630,34 @@ li{
     left: 10%;
     position: absolute;
 }
+.projectsOverlay a{
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+}
 .projectsText{
     font-size: 60px;
     color: #fff;
     font-family: "poppins", sans-serif;
     font-weight: 700;
 }
-.projectsOverlay a{
-    color: #fff;
+.view{
+    font-size: 20px;
+    margin-top: -20px;
     font-family: "poppins", sans-serif;
-    font-weight: 600;
 }
-
-
+.view a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: green;
+        position: absolute;
+        left: 0;
+        bottom: 127px;
+}
+    .view a:hover::after{
+        width: 30%;
+    }
 .chevrons {
     display: flex;
     justify-content: space-between;
@@ -647,6 +666,26 @@ li{
     height: 80px; 
 }
 
+.chevronLeft i, .chevronRight i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    color: #fff;
+    background-color: #ffffff57;
+    font-size: 15px;
+    transition: transform 0.2s; 
+}
+.chevronLeft i:hover, .chevronRight i:hover {
+    color: green;
+    transform: scale(1.1); 
+}
+
+/*                                 projects photo page ends                    */
+/*                                 footer page starts                    */
 .topFooter{
     display: flex;
     justify-content: space-evenly ;
@@ -680,63 +719,50 @@ li{
     width: 71%;
     margin-left: 220px;
 }
+.middleFooter h1{
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    }
+
+    .con{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .address{
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    .contactDetails{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .contact{
+        font-weight: 500;
+    }
+    .something {
+        white-space: nowrap;
+    }
 .ul{
     display: flex;
     justify-content: space-evenly;
     margin-top: 32px;
 }
-.con{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+
 .ul ul li{
     font-size: 15px;
     margin-left: -50px;
-}
-.something {
-    white-space: nowrap;
-}
-.contact{
-    font-weight: 500;
-}
-.middleFooter h1{
-font-size: 25px;
-font-family: "Ubuntu", sans-serif;
 }
 .bottomFooter{
     display: flex;
     justify-content: space-between;
 }
-.address{
-    font-size: 15px;
-    margin-top: 40px;
-}
-.contactDetails{
-    font-size: 15px;
-    margin-top: 10px;
-}
-.chevronLeft i, .chevronRight i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px; 
-    color: #fff;
-    background-color: #ffffff57;
-    font-size: 15px;
-    transition: transform 0.2s; 
-}
-.chevronLeft i:hover, .chevronRight i:hover {
-    color: red;
-    transform: scale(1.1); 
-}
+
 .links{
     font-size: 12px;
 }
 .copyright{
     font-size: 12px;
 }
+/*                                   footer page ends                       */
