@@ -839,7 +839,11 @@ nav{
     font-weight: 600;
 }
 .nav-link{
-    color: white;
+    color: rgb(9, 79, 9);
+    margin-left: 2000px;
+    font-weight: 900;
+    margin: 40px;
+    margin-top: -50px;
 }
 .nav-link:hover{
     color: rgb(9, 79, 9);
@@ -952,10 +956,10 @@ nav{
 
 .text5{
     position: absolute;
-    bottom: 170px;
+    bottom: 200px;
     left: 60px;
     width: 5%;
-    height: 200px;
+    height: 150px;
     background-color: rgb(9, 79, 9);
     z-index: 2;
     animation: slide-out 1.5s forwards;
@@ -991,7 +995,7 @@ nav{
 .text6{
     position: absolute;
     bottom: 330px;
-    margin-left: 50px;
+    margin-left: 45px;
     width: 52%;
     height: 150px;
     background-color: rgb(9, 79, 9);
@@ -1002,10 +1006,10 @@ nav{
 @keyframes slide{
     0%{
         left: 0;
-        width: 60%;
+        width: 63%;
     }
     100%{
-        left: 60%;
+        left: 63%;
         width: 0;
     }
 }
@@ -1034,10 +1038,10 @@ nav{
 @keyframes slide-in{
     0%{
         left: 0;
-        width: 50%;
+        width: 53%;
     }
     100%{
-        left: 50%;
+        left: 53%;
         width: 0;
     }
 }
@@ -1067,10 +1071,10 @@ nav{
 @keyframes slide-away{
     0%{
         left: 0;
-        width: 63%;
+        width: 68%;
     }
     100%{
-        left: 63%;
+        left: 68%;
         width: 0;
     }
 }
@@ -1128,7 +1132,7 @@ a{
     position: absolute;
     transform: translate(-50%, -50%);
     bottom: 50px;
-    right: 47%;
+    right: 35%;
     width: 50px;
     height: 50px;
     border: 3px solid white;
@@ -1234,19 +1238,19 @@ a{
 }
 
 .work-list .work:nth-child(1) {
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 
 .work-list .work:nth-child(2) {
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
 }
 
 .work-list .work:nth-child(3) {
-    transition-delay: 0.6s;
+    transition-delay: 0.3s;
 }
 
 .work-list .work:nth-child(4) {
-    transition-delay: 0.8s;
+    transition-delay: 0.4s;
 }
 
 
@@ -1286,7 +1290,7 @@ a{
     background-color: rgb(5, 85, 5);
     width: 95%;
     height: 100vh;
-    margin-top: -50px;
+    margin-top: -20px;
 }
 .roww{
     margin-top: -400px;
@@ -1296,11 +1300,12 @@ a{
 .workImage{
     width: 250px;
     height: 120px;
-    margin-top: -400px;
+    margin-top: -380px;
     margin-left: -80px;
 }
 
 /*                                 animated page starts                    */
+
 .h1-second{
     color: #fff;
     font-family: "Ubuntu", sans-serif;
@@ -1324,22 +1329,34 @@ a{
     font-weight: 100;
     font-size: 12px;
 }
+.animated-list{
+    color: #fff !important;
+}
 ul{
-    margin-top: -10px;
-    color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    margin-left: -315px;
     margin-top: 20px;
+    color: white !important;
+    font-family: "Ubuntu", sans-serif;
+    margin-left: -300px;
 }
 .fa-minus{
     font-weight: lighter;
     font-size: 11px;
+    color: #fff !important;
+}
+.REPUTATION{
+    color: white !important;
 }
 li{
     font-weight: bolder;
     font-size: 10px;
     list-style: none;
     margin: 1px;
+    z-index: 1000;
+    color: #fff !important;
+}
+.animated-list li.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 .animated-list li {
     opacity: 0;
@@ -1372,9 +1389,9 @@ li{
   }
   
 .secondButton{
-    margin-left: 3px;
+    margin-left: -300px;
     font-size: 8px;
-    width: 80px;
+    width: 95px;
     height: 25px;
     border: 0;
     margin-top: 10px;
@@ -1383,7 +1400,7 @@ li{
     font-weight: 200;
     color: #fff;
     background-color: green;
-    padding: 0 12px;
+    padding: 0 1px;
 }
 .bIcon-span{
     margin-left: 20px;
