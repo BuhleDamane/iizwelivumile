@@ -1,6 +1,4 @@
-body{
-    background-color: #fff;
-}
+
 /*                        home starts                         */
 /*                        nav starts                          */
 nav{
@@ -655,7 +653,7 @@ li{
         background: green;
         position: absolute;
         left: 0;
-        bottom: 127px;
+        bottom: 137px;
 }
     .view a:hover::after{
         width: 30%;
@@ -772,23 +770,21 @@ li{
 
 
 /* Extra small devices  */
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
    /*                        home starts                         */
 /*                        nav starts                          */
+
 nav{
     height: 70px;
     font-family: "Ubuntu", sans-serif;
-   width: 100%;
    background-color: rgba(0, 128, 0, 0.462);
     position: fixed;
    transition: background-color 0.3s ease;
    z-index: 1000;
 }
 .navbar{
-    z-index: 10000;
     position: fixed;
     top: 0;
-    width: 100%;
 
 }
 .navbar-brand{
@@ -826,11 +822,7 @@ nav{
     font-size: 10px;
 }
 
-.collapse{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-}
+
 .nav-item{
     font-size: 15px;
     font-weight: 600;
@@ -841,30 +833,17 @@ nav{
 .nav-link:hover{
     color: rgb(9, 79, 9);
 }
-nav ul li .nav-link::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: green;
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-}
-nav ul li :hover::after{
-    width: 100%;
-}
 .active{
     color: orange;
 }
 .search-icon{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 .nav .search-icon {
     cursor: pointer;
     color: #fff;
     font-size: 15px;
-    margin-left: 10px;
 }
 
 .search-form {
@@ -1130,7 +1109,7 @@ a{
 }
 
 .next {
-    right: 68px;
+    right: 10px;
     border-radius: 3px 0 0 3px;
     
 }
@@ -1169,25 +1148,25 @@ a{
 .who{
     margin-top: 50px;
 }
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .what-p1{
     font-family: "Ubuntu", sans-serif;
     font-weight: 100;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 0 0 100% !important;
+    font-size: 12px;
 }
 .divider {
     height: 50px;
     width: 4px; 
     background-color: rgb(23, 203, 23);
     margin: 0 10px; 
-    margin-top: 60px;
+    margin-top: 70px;
 }
 .what{
     margin-left: 4px;
-    margin-top: -115px;
+    margin-top: -100px;
     margin-bottom: 30px;
     color: rgb(9, 53, 9);
     font-weight: 700;
@@ -1202,10 +1181,11 @@ a{
 }
 .what-p{
     margin-top: -10px;
-    margin-left: 50px;
+    margin-left: 30px;
     font-style: italic;
     font-family: "Ubuntu", sans-serif;
     font-weight: 100;
+    font-size: 10px;
 }
 /*                                 who page ends                    */
 /*                                 projects page starts                    */
@@ -1284,7 +1264,7 @@ a{
     left: 42%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     z-index: 10;
 }
 .work-span{
@@ -1293,58 +1273,62 @@ a{
 
 .backgroundProjects{
     background-color: rgb(5, 85, 5);
-    width: 100%;
+    width: 95%;
     height: 100vh;
-    margin-top: -250px;
+    margin-top: -50px;
 }
 .roww{
     margin-top: -400px;
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-    width: 90%;
+    width: 100%;
 
 }
 .workImage{
-    width: 420px;
-    height: 280px;
+    width: 250px;
+    height: 120px;
+    margin-top: -400px;
+    margin-left: -80px;
 }
 
 /*                                 animated page starts                    */
 .h1-second{
-    margin-top: -10px;
     color: #fff;
     font-family: "Ubuntu", sans-serif;
+    display: flex;
+    margin-left: -200px;
+    font-size: 20px;
+    margin-top: -100px;
 }
 .second{
     height: 65px;
-    margin-top: 20px;
-    
+    margin-top: 18px;
+    margin-left: -195px;
 }
 
 .p-second{
     font-family: "poppins", sans-serif;
     font-style: italic;
     color: #dedbdb;
-    margin-left: 40px;
+    margin-left: -160px;
     margin-top: -73px;
     font-weight: 100;
-
+    font-size: 12px;
 }
 ul{
     margin-top: -10px;
     color: #fff;
     font-family: "Ubuntu", sans-serif;
+    margin-left: -315px;
+    margin-top: 20px;
 }
 .fa-minus{
     font-weight: lighter;
-    font-size: 17px;
+    font-size: 11px;
 }
 li{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 10px;
     list-style: none;
-    margin: 10px;
+    margin: 1px;
 }
 .animated-list li {
     opacity: 0;
@@ -1377,17 +1361,18 @@ li{
   }
   
 .secondButton{
-    margin-left: 13px;
-    font-size: 12px;
-    width: 150px;
-    height: 35px;
+    margin-left: 3px;
+    font-size: 8px;
+    width: 80px;
+    height: 25px;
     border: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 2px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 200;
     color: #fff;
     background-color: green;
+    padding: 0 12px;
 }
 .bIcon-span{
     margin-left: 20px;
@@ -1396,12 +1381,12 @@ li{
 /*                                 animated page ends                    */
 /*                                 projects photo page starts            */
 .elijah{
-    width: 100%;
-    height: 100vh;
+    width: 95%;
+    height: 90vh;
 }
 .projectsOverlay{
     translate: transform (-50%, -50%);
-    top: 301%;
+    top: 550%;
     left: 10%;
     position: absolute;
 }
@@ -1411,20 +1396,20 @@ li{
     font-weight: 600;
 }
 .projectsText{
-    font-size: 60px;
+    font-size: 30px;
     color: #fff;
     font-family: "poppins", sans-serif;
     font-weight: 700;
 }
 .view{
-    font-size: 20px;
-    margin-top: -20px;
+    font-size: 10px;
+    margin-top: -60px;
     font-family: "poppins", sans-serif;
 }
 .view a::after{
         content: '';
         width: 0;
-        height: 3px;
+        height: 2px;
         background: green;
         position: absolute;
         left: 0;
@@ -1437,8 +1422,8 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92px; 
-    height: 80px; 
+    width: 68px; 
+    height: 20px; 
 }
 
 .chevronLeft i, .chevronRight i {
@@ -1447,11 +1432,11 @@ li{
     align-items: center;
     border: 2px solid #fff;
     border-radius: 50%;
-    width: 40px;
-    height: 40px; 
+    width: 30px;
+    height: 30px; 
     color: #fff;
     background-color: #ffffff57;
-    font-size: 15px;
+    font-size: 8px;
     transition: transform 0.2s; 
 }
 .chevronLeft i:hover, .chevronRight i:hover {
@@ -1468,34 +1453,36 @@ li{
     margin-bottom: 30px;
 }
 .topFooter p{
-    font-size: 30px;
+    font-size: 9px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
 }
+.form-footer{
+margin-top: -8px;
+}
 .inputText{
-    width: 430px;
+    width: 110px;
     font-family: "Ubuntu", sans-serif;
-    height: 45px;
-    padding: 12px 12px;
-
+    height: 22px;
+    padding: 10px 10px;
+    font-size: 8px;
 }
 .inputButton{
-    width: 90px;
+    width: 47px;
     margin-left: -5px;
     font-family: "Ubuntu", sans-serif;
-    font-size: 15px;
-    height: 35px;
+    font-size: 8px;
     background-color: green;
     color: #fff;
     border: 0;
-    height: 45px;
+    height: 22.5px;
 }
 .middleHr{
-    width: 71%;
-    margin-left: 220px;
+    width: 87%;
+    margin-left: 20px;
 }
 .middleFooter h1{
-    font-size: 25px;
+    font-size: 1px;
     font-family: "Ubuntu", sans-serif;
     }
 
@@ -1506,18 +1493,18 @@ li{
         margin-bottom: 50px;
     }
     .address{
-        font-size: 15px;
+        font-size: 8px;
         margin-top: 40px;
     }
     .contactDetails{
-        font-size: 15px;
+        font-size: 8px;
         margin-top: 10px;
     }
     .contact{
         font-weight: 500;
     }
-    .something {
-        white-space: nowrap;
+    .something{
+        font-size: 2px;
     }
 .ul{
     display: flex;
@@ -1526,7 +1513,7 @@ li{
 }
 
 .ul ul li{
-    font-size: 15px;
+    font-size: 8px;
     margin-left: -50px;
 }
 .bottomFooter{
@@ -1535,41 +1522,29 @@ li{
 }
 
 .links{
-    font-size: 12px;
+    font-size: 7px;
 }
 .copyright{
-    font-size: 12px;
+    font-size: 7px;
 }
 }
 
 /* Small devices */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    body {
-        background-color: lightgreen;
-        font-size: 14px;
-    }
+    
 }
 
 /* Medium devices  */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    body {
-        background-color: lightyellow;
-        font-size: 16px;
-    }
+   
 }
 
 /* extra large devices */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body {
-        background-color: lightcoral;
-        font-size: 18px;
-    }
+    
 }
 
 /* extra large devices*/
 @media (min-width: 1200px) {
-    body {
-        background-color: lightgray;
-        font-size: 20px;
-    }
+    
 }
