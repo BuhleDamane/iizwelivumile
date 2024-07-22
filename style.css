@@ -415,6 +415,12 @@ a{
     margin: 0 10px; 
     margin-top: 60px;
 }
+.izweImage-col, .animated-col, .izwe-col{
+    flex-basis: 33%;
+}
+.what-col, .what-p1-col{
+    flex-basis: 50%;
+}
 .what{
     margin-left: 4px;
     margin-top: -115px;
@@ -1163,7 +1169,9 @@ a{
 .who{
     margin-top: 50px;
 }
-
+.izweImage-col, .animated-col, .izwe-col{
+    flex-basis: 100%;
+}
 .what-p1{
     font-family: "Ubuntu", sans-serif;
     font-weight: 100;
@@ -1171,6 +1179,9 @@ a{
     max-width: 100%;
     flex-basis: 0 0 100% !important;
     font-size: 12px;
+}
+.what-col, .what-p1-col{
+    flex-basis: 100%;
 }
 .divider {
     height: 50px;
@@ -1288,7 +1299,7 @@ a{
 
 .backgroundProjects{
     background-color: rgb(5, 85, 5);
-    width: 95%;
+    width: 100%;
     height: 100vh;
     margin-top: -20px;
 }
@@ -1300,38 +1311,49 @@ a{
 .workImage{
     width: 250px;
     height: 120px;
-    margin-top: -380px;
+    margin-top: -300px;
     margin-left: -80px;
 }
 
 /*                                 animated page starts                    */
-
+.izweImage-col, .animated-col, .izwe-col , .animated-butt{
+    flex-basis: 100%;
+}
 .h1-second{
     color: #fff;
     font-family: "Ubuntu", sans-serif;
     display: flex;
-    margin-left: -200px;
+    margin-left: -80px;
     font-size: 20px;
-    margin-top: -100px;
+    margin-top: -70px;
 }
 .second{
     height: 65px;
     margin-top: 18px;
-    margin-left: -195px;
+    margin-left: -75px;
 }
 
 .p-second{
     font-family: "poppins", sans-serif;
     font-style: italic;
     color: #dedbdb;
-    margin-left: -160px;
-    margin-top: -73px;
+    margin-left: -45px;
+    margin-top: -68px;
     font-weight: 100;
     font-size: 12px;
+    text-align: justify;
+    width: 70%;
+    
 }
-.animated-list{
+
+.animated-col{
     color: #fff !important;
+   justify-content: center;
+    display: flex;
+    margin-top: -20px;
+    margin-left: -100px;
 }
+
 ul{
     margin-top: 20px;
     color: white !important;
@@ -1343,8 +1365,8 @@ ul{
     font-size: 11px;
     color: #fff !important;
 }
-.REPUTATION{
-    color: white !important;
+.animated-butt{
+    margin-left: 360px;
 }
 li{
     font-weight: bolder;
@@ -1409,12 +1431,12 @@ li{
 /*                                 animated page ends                    */
 /*                                 projects photo page starts            */
 .elijah{
-    width: 95%;
+    width: 100%;
     height: 90vh;
 }
 .projectsOverlay{
     translate: transform (-50%, -50%);
-    top: 550%;
+    top: 570%;
     left: 10%;
     position: absolute;
 }
@@ -1441,7 +1463,7 @@ li{
         background: green;
         position: absolute;
         left: 0;
-        bottom: 127px;
+        bottom: 67px;
 }
     .view a:hover::after{
         width: 30%;
@@ -1481,36 +1503,39 @@ li{
     margin-bottom: 30px;
 }
 .topFooter p{
-    font-size: 9px;
+    font-size: 10px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
+    margin-left: -10px;
 }
 .form-footer{
 margin-top: -8px;
 }
 .inputText{
-    width: 110px;
+    margin-left: -10px;
+    width: 180px;
     font-family: "Ubuntu", sans-serif;
-    height: 22px;
+    height: 25px;
     padding: 10px 10px;
     font-size: 8px;
 }
 .inputButton{
-    width: 47px;
+    width: 55px;
     margin-left: -5px;
     font-family: "Ubuntu", sans-serif;
     font-size: 8px;
     background-color: green;
     color: #fff;
     border: 0;
-    height: 22.5px;
+    height: 25px;
+    border-radius: 1px;
 }
 .middleHr{
-    width: 87%;
-    margin-left: 20px;
+    width: 92%;
+    margin-left: 9px;
 }
 .middleFooter h1{
-    font-size: 1px;
+    font-size: 10px;
     font-family: "Ubuntu", sans-serif;
     }
 
@@ -1522,38 +1547,56 @@ margin-top: -8px;
     }
     .address{
         font-size: 8px;
-        margin-top: 40px;
+        margin-top: 24px;
     }
     .contactDetails{
         font-size: 8px;
-        margin-top: 10px;
+        margin-top: 17px;
+        line-height: 0.3;
     }
     .contact{
         font-weight: 500;
     }
-    .something{
-        font-size: 2px;
+    .contactDetails3{
+        width: 90%;
+        font-size: 8px;
+        line-height: 0.5;
+        margin-top: -3px;
+    }
+    .contact3{
+       display: block; 
     }
 .ul{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 32px;
+    margin-top: -18px;
+
+}
+.ul1{
+    margin-left: -128px;
 }
 
 .ul ul li{
     font-size: 8px;
-    margin-left: -50px;
+    margin-left: 100px;
+    color: green !important;
 }
 .bottomFooter{
     display: flex;
     justify-content: space-between;
 }
-
+.links a{
+    color: green;
+}
 .links{
     font-size: 7px;
+    margin-left: 5px;
+    color: green !important;
+    font-family: "Ubuntu", sans-serif;
 }
 .copyright{
     font-size: 7px;
+    font-family: "Ubuntu", sans-serif;
 }
 }
 
