@@ -1538,6 +1538,7 @@ margin-top: -8px;
 .middleFooter h1{
     font-size: 10px;
     font-family: "Ubuntu", sans-serif;
+    margin-left: -10px;
     }
 
     .con{
@@ -1574,7 +1575,7 @@ margin-top: -8px;
 
 }
 .ul1{
-    margin-left: -128px;
+    margin-left: -138px;
 }
 
 .ul ul li{
