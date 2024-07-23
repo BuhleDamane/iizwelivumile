@@ -1507,21 +1507,21 @@ li{
     font-size: 10px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 .form-footer{
 margin-top: -8px;
 }
 .inputText{
     margin-left: -10px;
-    width: 180px;
+    width: 160px;
     font-family: "Ubuntu", sans-serif;
     height: 25px;
     padding: 10px 10px;
     font-size: 8px;
 }
 .inputButton{
-    width: 55px;
+    width: 50px;
     margin-left: -5px;
     font-family: "Ubuntu", sans-serif;
     font-size: 8px;
