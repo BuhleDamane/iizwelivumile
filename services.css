@@ -1,0 +1,19 @@
+.introImg{
+    height: 70vh;
+    width: 100%;
+}
+.servicesh1{
+    position: absolute;
+    left: 23%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.servicesh1 h1{
+    font-size: 70px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 650;
+}
+.wrap{
+    background-color: #f9f6f6be
+}
