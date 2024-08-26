@@ -1,3 +1,7 @@
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
 .introImg{
     height: 70vh;
     width: 100%;
@@ -15,5 +19,150 @@
     font-weight: 650;
 }
 .wrap{
-    background-color: #f9f6f6be
+    background-color: #f9f6f6be;
+    padding: 100px 150px;
+
+}
+.construction-ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.construction-ul li{
+    font-weight: 400;
+    font-size: 16px;
+}
+.construction2{
+    padding-right: 200px;
+}
+
+.construction h1{
+    margin-bottom: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+
+}
+.construction p{
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+h4{
+    margin-top: 30px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.wrap li{
+    list-style: circle;
+}
+.infrastructure{
+    margin-bottom: 50px;
+}
+.infrastructure h1{
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.infrastructure p{
+    line-height: 30px;
+    font-family: "Ubuntu", sans-serif;
+}
+.infrastructure-li li{
+    font-weight: 400;
+    font-size: 16px;
+}
+.infrastructure-li{
+    display: flex;
+    justify-content: space-between;
+}
+.infrastructure2{
+    padding-right: 113px;
+}
+.earthworks{
+    margin-bottom: 50px;
+}
+.earthworks h1{
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.earthworks p{
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.earthworks-li{
+    display: flex;
+    justify-content: space-between;
+}
+.earthworks-li li{
+    font-weight: 400;
+    font-size: 16px;
+}
+.earthworks2{
+    padding-right: 200px;
+}
+.projects{
+    margin-bottom: 50px;
+}
+.projects h1{
+    line-height: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.projects p{
+    line-height: 30px;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 30px;
+}
+.projects-li li{
+    font-weight: 400;
+    font-size: 16px;
+}
+.projects2{
+    padding-right: 100px;
+}
+.projects-li{
+    display: flex;
+    justify-content: space-between;
+}
+.materials h1{
+    margin-bottom: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+}
+.materials p{
+    font-family: "Ubuntu", sans-serif;
+    line-height: 30px;
+}
+.safety{
+    padding: 70px 50px;
+}
+.safety h1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.safety li{
+    list-style: circle;
+    font-weight: 400;
+    font-size: 19px
+}
+.h1-p, .h1{
+    flex-basis: 50%;
+
+}
+.services-btn{
+    height: 40px;
+    width: 180px;
+    background-color: green;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
