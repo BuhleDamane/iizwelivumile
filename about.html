@@ -94,7 +94,7 @@
         <h1>
           Why Izwe Livumile is Your First Choice Construction Partner.
        </h1>
-        <ul class="izwe">
+        <ul class="izwe izwe-list">
           <li><span><i class="fa-solid fa-minus"></i></span> Our strong culture of professionalism and respect</li>
           <li><span><i class="fa-solid fa-minus"></i></span> Our responsive senior management who have extensive industry experience</li>
           <li><span><i class="fa-solid fa-minus"></i></span> Our conservative approach to risk-taking outside of established construction standards</li>
@@ -251,5 +251,25 @@
           </div>
         </div>
       </div>  
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Fade-in and slide-up for h2 elements
+          const h2Elements = document.querySelectorAll('#about h2');
+          h2Elements.forEach((element, index) => {
+            setTimeout(() => {
+              element.classList.add('show');
+            }, index * 300); // Delay based on index
+          });
+        
+          // Slide-in for izwe list items
+          const izweItems = document.querySelectorAll('.iswe li');
+          izweItems.forEach((item, index) => {
+            setTimeout(() => {
+              item.classList.add('show');
+            }, index * 300); // Delay based on index
+          });
+        });
+        
+      </script>
 </body>
 </html>
