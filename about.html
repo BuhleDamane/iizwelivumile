@@ -247,10 +247,32 @@
           <a href="#">Responsible Disclosure Policy</a>
           </div>
           <div class="copyright">
-            <p>© 2024 Copyright Izwe Livumile | All Rights Reserved | Designed & Developed by Buhle Damane</p>
+            <p>&copy; 2024 Copyright Izwe Livumile | All Rights Reserved | Designed & Developed by Our Team</p>
+
           </div>
         </div>
       </div>  
+      <script>
+     
+        document.addEventListener('scroll', function() {
+          const navbar = document.getElementById('navbar');
+          const navLinks = document.querySelectorAll('#navbar a'); // Assuming nav links are inside the navbar
+          const scrollThreshold = 1; // Threshold to trigger the color change
+      
+          if (window.scrollY > scrollThreshold) {
+              navbar.style.backgroundColor = 'rgba(0, 128, 0, 0.75)'; // Green background with 0.75 opacity
+              navLinks.forEach(link => {
+                  link.style.color = '#fff'; // Change nav-link color to white
+              });
+          } else {
+              navbar.style.backgroundColor = 'transparent'; // Transparent background at the top
+              navLinks.forEach(link => {
+                  link.style.color = ''; // Reset nav-link color (use the default color)
+              });
+          }
+      });
+      
+      </script>
       <script>
         document.addEventListener('DOMContentLoaded', () => {
           // Fade-in and slide-up for h2 elements
