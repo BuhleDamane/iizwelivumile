@@ -534,48 +534,42 @@ a{
 }
 .roww{
     margin-top: -400px;
-    display: flex;
-    justify-content: center;
-    margin-left: 100px;
-    width: 90%;
-
+    margin-bottom: 200px;
 }
 .workImage{
-    width: 420px;
-    height: 280px;
+    width: 400px;
+    height: 300px;
 }
-
-/*                                 animated page starts                    */
-.h1-second{
-    margin-top: -10px;
+.izwe-h1, .izwe-p{
     color: #fff;
-    font-family: "Ubuntu", sans-serif;
 }
-.second{
-    height: 65px;
-    margin-top: 20px;
-    
-}
-
-.p-second{
-    font-family: "poppins", sans-serif;
-    font-style: italic;
-    color: #dedbdb;
+.izwe-p{
     margin-left: 40px;
-    margin-top: -73px;
-    font-weight: 100;
-
+    margin-top: -110px;
+}
+.div{
+    width: 4px;
+    height: 90px;
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.animated-col, .col-izwe, .image-people{
+    flex-basis: 28%;
+    margin: 0 auto;
 }
   .animated-col ul{
-    margin-top: -10px;
+    margin-top: 20px;
     color: #fff;
     font-family: "Ubuntu", sans-serif;
+
 }
 .fa-minus{
     font-weight: lighter;
     font-size: 17px;
 }
-li{
+.animated-list li{
     font-weight: bolder;
     font-size: 20px;
     list-style: none;
@@ -622,8 +616,7 @@ li{
     font-weight: 200;
     color: #fff;
     background-color: green;
-    margin-left: 1070px;
-    margin-top: -20px;
+   margin-left: 48px;
 }
 .bIcon-span{
     margin-left: 20px;
@@ -697,85 +690,159 @@ li{
 
 /*                                 projects photo page ends                    */
 /*                                 footer page starts                    */
-.topFooter{
+.footer {
+    background-color: rgb(9, 79, 9); /* Dark background */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly ;
-    margin-top: 50px;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
     margin-bottom: 30px;
 }
-.topFooter p{
-    font-size: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-}
-.inputText{
-    width: 430px;
-    font-family: "Ubuntu", sans-serif;
-    height: 45px;
-    padding: 12px 12px;
 
-}
-.inputButton{
-    width: 90px;
-    margin-left: -5px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 15px;
-    height: 35px;
-    background-color: green;
-    color: #fff;
-    border: 0;
-    height: 45px;
-}
-.middleHr{
-    width: 71%;
-    margin-left: 220px;
-}
-.middleFooter h1{
-    font-size: 25px;
-    font-family: "Ubuntu", sans-serif;
-    }
-
-    .con{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .address{
-        font-size: 15px;
-        margin-top: 40px;
-    }
-    .contactDetails{
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    .contact{
-        font-weight: 500;
-    }
-    .something {
-        white-space: nowrap;
-    }
-.ul{
+.newsletter-form {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 32px;
+    justify-content: center;
 }
 
-.ul ul li{
-    font-size: 15px;
-    margin-left: -50px;
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px; /* Fixed width */
 }
-.bottomFooter{
+
+.subscribe-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.links{
-    font-size: 12px;
+.footer-info, .footer-links, .footer-policies {
+    flex: 1 1 100%; /* Default to full-width */
+    margin: 15px 0; /* Space between columns */
 }
-.copyright{
-    font-size: 12px;
+
+.footer-info h3, .footer-links h3, .footer-policies h3 {
+    margin-bottom: 15px;
 }
+
+.footer-links ul, .footer-policies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-policies li {
+    margin: 8px 0;
+    padding: 5px 0; /* Add padding for spacing */
+    font-size: 16px; /* Increase font size for visibility */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.footer-links a, .footer-policies a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-policies a:hover {
+    color: #28a745; /* Green on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
+
+
 /*                                   footer page ends                       */
 /*                                   ABOUT PAGE STARTS                      */
 
@@ -1299,50 +1366,40 @@ a{
 .backgroundProjects{
     background-color: rgb(5, 85, 5);
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     margin-top: -20px;
 }
 .roww{
-    margin-top: -400px;
-    width: 100%;
-
+    margin-top: -700px;
 }
 .workImage{
-    width: 250px;
-    height: 120px;
-    margin-top: -300px;
-    margin-left: -80px;
+    width: 300px;
+    height: 150px;
+   margin-bottom: 50px;
 }
+.izwe-h1, .izwe-p{
+    color: #fff;
+    margin-top: -50px;
+}
+.izwe-p{
+    margin-left: 40px;
+    margin-top: -110px;
+}
+.div{
+    width: 4px;
+    height: 90px;
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
 
 /*                                 animated page starts                    */
-.izweImage-col, .animated-col, .izwe-col , .animated-butt{
+.workImage, .animated-col, .col-izwe{
     flex-basis: 100%;
-}
-.h1-second{
-    color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    display: flex;
-    margin-left: -80px;
-    font-size: 20px;
-    margin-top: -70px;
-}
-.second{
-    height: 65px;
-    margin-top: 18px;
-    margin-left: -75px;
-}
-
-.p-second{
-    font-family: "poppins", sans-serif;
-    font-style: italic;
-    color: #dedbdb;
-    margin-left: -45px;
-    margin-top: -68px;
-    font-weight: 100;
-    font-size: 12px;
-    text-align: justify;
-    width: 70%;
-    
+    margin: 0 auto;
+    margin-bottom: 80px;
 }
 
 .animated-col{
@@ -1350,29 +1407,25 @@ a{
    justify-content: center;
     display: flex;
     margin-top: -20px;
-    margin-left: -100px;
+  
 }
 
-ul{
+.animated-list ul{
     margin-top: 20px;
     color: white !important;
     font-family: "Ubuntu", sans-serif;
-    margin-left: -300px;
 }
 .fa-minus{
     font-weight: lighter;
     font-size: 11px;
     color: #fff !important;
 }
-.animated-butt{
-    margin-left: 360px;
-}
-li{
+
+.animated-list li{
     font-weight: bolder;
     font-size: 10px;
     list-style: none;
     margin: 1px;
-    z-index: 1000;
     color: #fff !important;
 }
 .animated-list li.visible {
@@ -1410,18 +1463,16 @@ li{
   }
   
 .secondButton{
-    margin-left: -300px;
+   
     font-size: 8px;
     width: 95px;
     height: 25px;
     border: 0;
-    margin-top: 10px;
     border-radius: 2px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 200;
     color: #fff;
     background-color: green;
-    padding: 0 1px;
 }
 .bIcon-span{
     margin-left: 20px;
@@ -1495,109 +1546,123 @@ li{
 
 /*                                 projects photo page ends                    */
 /*                                 footer page starts                    */
-.topFooter{
+.footer {
+    background-color: rgb(9, 79, 9); /* Dark background */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly ;
-    margin-top: 50px;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
     margin-bottom: 30px;
 }
-.topFooter p{
-    font-size: 10px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    margin-left: -5px;
-}
-.form-footer{
-margin-top: -8px;
-}
-.inputText{
-    margin-left: -10px;
-    width: 160px;
-    font-family: "Ubuntu", sans-serif;
-    height: 25px;
-    padding: 10px 10px;
-    font-size: 8px;
-}
-.inputButton{
-    width: 50px;
-    margin-left: -5px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 8px;
-    background-color: green;
-    color: #fff;
-    border: 0;
-    height: 25px;
-    border-radius: 1px;
-}
-.middleHr{
-    width: 92%;
-    margin-left: 9px;
-}
-.middleFooter h1{
-    font-size: 10px;
-    font-family: "Ubuntu", sans-serif;
-    margin-left: -10px;
-    }
 
-    .con{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .address{
-        font-size: 8px;
-        margin-top: 18px;
-    }
-    .contactDetails{
-        font-size: 8px;
-        margin-top: 17px;
-        line-height: 0.3;
-    }
-    .contact{
-        font-weight: 500;
-    }
-    .contactDetails3{
-        width: 90%;
-        font-size: 8px;
-        line-height: 0.5;
-        margin-top: -3px;
-    }
-    .contact3{
-       display: block; 
-    }
-.ul{
+.newsletter-form {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: -18px;
-
-}
-.ul1{
-    margin-left: -138px;
+    justify-content: center;
 }
 
-.ul ul li{
-    font-size: 8px;
-    margin-left: 100px;
-    color: green !important;
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px; /* Fixed width */
 }
-.bottomFooter{
+
+.subscribe-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
-.links a{
-    color: green;
+
+.footer-info, .footer-links, .footer-policies {
+    flex: 1 1 100%; /* Default to full-width */
+    margin: 15px 0; /* Space between columns */
 }
-.links{
-    font-size: 7px;
-    margin-left: 5px;
-    color: green !important;
-    font-family: "Ubuntu", sans-serif;
+
+.footer-info h3, .footer-links h3, .footer-policies h3 {
+    margin-bottom: 15px;
 }
-.copyright{
-    font-size: 7px;
-    font-family: "Ubuntu", sans-serif;
+
+.footer-links ul, .footer-policies ul {
+    list-style-type: none;
+    padding: 0;
 }
+
+.footer-links li, .footer-policies li {
+    margin: 8px 0;
+    padding: 5px 0; /* Add padding for spacing */
+    font-size: 16px; /* Increase font size for visibility */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.footer-links a, .footer-policies a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-policies a:hover {
+    color: #28a745; /* Green on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
+
 }
 
 /* Small devices */
@@ -2176,7 +2241,7 @@ a{
     font-size: 20px;
 }
 
-ul{
+.animated-list ul{
     margin-top: 20px;
     color: white !important;
     font-family: "Ubuntu", sans-serif;
@@ -2190,7 +2255,7 @@ ul{
 .animated-butt{
     margin-left: 500px;
 }
-li{
+.animated-list li{
     font-weight: bolder;
     font-size: 13px;
     list-style: none;
@@ -2233,7 +2298,7 @@ li{
   }
   
 .secondButton{
-    margin-left: -300px;
+   
     font-size: 12px;
     width: 120px;
     height: 35px;
@@ -2318,109 +2383,119 @@ li{
 
 /*                                 projects photo page ends                    */
 /*                                 footer page starts                    */
-.topFooter{
+.footer {
+    background-color: rgb(9, 79, 9);
     display: flex;
-    justify-content: space-evenly ;
-    margin-top: 50px;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
     margin-bottom: 30px;
 }
-.topFooter p{
-    font-size: 20px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-    margin-left: -10px;
-    margin-top: -7px;
-}
-.form-footer{
-margin-top: -8px;
-}
-.inputText{
-    margin-left: -10px;
-    width: 200px;
-    font-family: "Ubuntu", sans-serif;
-    height: 25px;
-    padding: 10px 10px;
-    font-size: 12px;
-}
-.inputButton{
-    width: 65px;
-    margin-left: -5px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 12px;
-    background-color: green;
-    color: #fff;
-    border: 0;
-    height: 25px;
-    border-radius: 1px;
-}
-.middleHr{
-    width: 83%;
-    margin-left: 59px;
-}
-.middleFooter h1{
-    font-size: 17px;
-    font-family: "Ubuntu", sans-serif;
-    }
 
-    .con{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .address{
-        font-size: 12px;
-        margin-top: 10px;
-    }
-    .contactDetails{
-        font-size: 12px;
-        margin-top: 17px;
-        line-height: 0.3;
-    }
-    .contact{
-        font-weight: 500;
-    }
-    .contactDetails3{
-        width: 90%;
-        font-size: 12px;
-        line-height: 0.5;
-        margin-top: -3px;
-    }
-    .contact3{
-       display: block; 
-    }
-.ul{
+.newsletter-form {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: -18px;
-
-}
-.ul1{
-    margin-left: -18px;
+    justify-content: center;
 }
 
-.ul ul li{
-    font-size: 12px;
-    margin-left: 20px;
-    color: green !important;
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px; /* Fixed width */
 }
-.bottomFooter{
+
+.subscribe-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
-.links a{
-    color: green;
+
+.footer-info, .footer-links, .footer-policies {
+    flex: 1 1 1 100%; /* Default to full-width */
+    margin: 15px 0; /* Space between columns */
+    overflow: visible;
 }
-.links{
-    font-size: 7px;
-    margin-left: 8px;
-    color: green !important;
-    font-family: "Ubuntu", sans-serif;
+
+.footer-info h3, .footer-links h3, .footer-policies h3 {
+    margin-bottom: 15px;
+    color: #fff !important;
 }
-.copyright{
-    font-size: 8px;
-    font-family: "Ubuntu", sans-serif;
+
+.footer-links ul, .footer-policies ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff !important;
 }
+
+.footer-links li, .footer-policies li {
+    margin: 8px 0;
+    padding: 5px 0; 
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.footer-links a, .footer-policies a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-policies a:hover {
+    color: #28a745; /* Green on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
+
 }
 
 /* Medium devices  */
@@ -2994,7 +3069,7 @@ a{
     line-height: 1.5;
 
 }
-ul{
+.animated-list ul{
     
     color: #fff;
     font-family: "Ubuntu", sans-serif;
@@ -3004,7 +3079,7 @@ ul{
     font-weight: lighter;
     font-size: 17px;
 }
-li{
+.animated-list li{
     font-weight: bolder;
     font-size: 12px;
     list-style: none;
@@ -3128,88 +3203,123 @@ li{
 
 /*                                 projects photo page ends                    */
 /*                                 footer page starts                    */
-.topFooter{
+.footer {
+    background-color: rgb(9, 79, 9); /* Dark background */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly ;
-    margin-top: 50px;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
     margin-bottom: 30px;
 }
-.topFooter p{
-    font-size: 23px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-}
-.inputText{
-    width: 400px;
-    font-family: "Ubuntu", sans-serif;
-    height: 40px;
-    padding: 12px 12px;
 
-}
-.inputButton{
-    width: 80px;
-    margin-left: -5px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 13px;
-    background-color: green;
-    color: #fff;
-    border: 0;
-    height: 40px;
-}
-.middleHr{
-    width: 94%;
-    margin-left: 30px;
-}
-.middleFooter h1{
-    font-size: 20px;
-    font-family: "Ubuntu", sans-serif;
-    }
-
-    .con{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .address{
-        font-size: 13px;
-        margin-top: 25px;
-    }
-    .contactDetails{
-        font-size: 13px;
-        margin-top: 10px;
-        line-height: 0.7;
-    }
-    .contact{
-        font-weight: 500;
-    }
-    .something {
-        white-space: nowrap;
-    }
-.ul{
+.newsletter-form {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 15px;
+    justify-content: center;
 }
 
-.ul ul li{
-    font-size: 13px;
-    margin-left: -50px;
-    color: rgb(9, 79, 9);
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px; /* Fixed width */
 }
-.bottomFooter{
+
+.subscribe-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.links{
-    font-size: 10px;
-    margin-left: 10px;
+.footer-info, .footer-links, .footer-policies {
+    flex: 1 1 100%; /* Default to full-width */
+    margin: 15px 0; /* Space between columns */
 }
-.copyright{
-    font-size: 10px;
-    margin-right: 5px;
+
+.footer-info h3, .footer-links h3, .footer-policies h3 {
+    margin-bottom: 15px;
 }
+
+.footer-links ul, .footer-policies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-policies li {
+    margin: 8px 0;
+    padding: 5px 0; /* Add padding for spacing */
+    font-size: 16px; /* Increase font size for visibility */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.footer-links a, .footer-policies a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-policies a:hover {
+    color: #28a745; /* Green on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
+
 /*                                   footer page ends                       */
 }
 
@@ -3792,7 +3902,7 @@ a{
     font-weight: 100;
 
 }
-ul{
+.animated-list ul{
     margin-top: -10px;
     color: #fff;
     font-family: "Ubuntu", sans-serif;
@@ -3801,7 +3911,7 @@ ul{
     font-weight: lighter;
     font-size: 17px;
 }
-li{
+.animated-list li{
     font-weight: bolder;
     font-size: 15px;
     list-style: none;
@@ -3927,89 +4037,123 @@ li{
 
 /*                                 projects photo page ends                    */
 /*                                 footer page starts                    */
-.topFooter{
+.footer {
+    background-color: rgb(9, 79, 9); /* Dark background */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly ;
-    margin-top: 50px;
+    flex-direction: column;
+}
+
+.footer-top {
+    text-align: center;
     margin-bottom: 30px;
 }
-.topFooter p{
-    font-size: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-}
-.inputText{
-    width: 430px;
-    font-family: "Ubuntu", sans-serif;
-    height: 45px;
-    padding: 12px 12px;
 
-}
-.inputButton{
-    width: 90px;
-    margin-left: -5px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 15px;
-    height: 35px;
-    background-color: green;
-    color: #fff;
-    border: 0;
-    height: 45px;
-}
-.middleHr{
-    width: 80%;
-    margin-left: 125px;
-}
-.middleFooter h1{
-    font-size: 21px;
-    font-family: "Ubuntu", sans-serif;
-    }
-
-    .con{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .address{
-        font-size: 13px;
-        margin-top: 40px;
-    }
-    .contactDetails{
-        font-size: 13px;
-        margin-top: 15px;
-        line-height: 1;
-    }
-    .contact{
-        font-weight: 500;
-        line-height: 1;
-    }
-    .something {
-        white-space: nowrap;
-    }
-.ul{
+.newsletter-form {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 15px;
+    justify-content: center;
 }
 
-.ul ul li{
-    font-size: 13px;
-    margin-left: -50px;
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 250px; /* Fixed width */
 }
-.bottomFooter{
+
+.subscribe-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-middle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.links{
-    font-size: 11px;
-    margin-left: 10px;
+.footer-info, .footer-links, .footer-policies {
+    flex: 1 1 100%; /* Default to full-width */
+    margin: 15px 0; /* Space between columns */
 }
-.copyright{
-    font-size: 11px;
-    margin-right: 10px;
+
+.footer-info h3, .footer-links h3, .footer-policies h3 {
+    margin-bottom: 15px;
 }
+
+.footer-links ul, .footer-policies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-policies li {
+    margin: 8px 0;
+    padding: 5px 0; /* Add padding for spacing */
+    font-size: 16px; /* Increase font size for visibility */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.footer-links a, .footer-policies a {
+    color: #ecf0f1; /* Light text color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-policies a:hover {
+    color: #28a745; /* Green on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
+
 /*                                   footer page ends                       */
 }
 
@@ -4574,7 +4718,7 @@ a{
     font-weight: 100;
 
 }
-ul{
+.animated-list ul{
     margin-top: -10px;
     color: #fff;
     font-family: "Ubuntu", sans-serif;
@@ -4583,7 +4727,7 @@ ul{
     font-weight: lighter;
     font-size: 17px;
 }
-li{
+.animated-list li{
     font-weight: bolder;
     font-size: 17px;
     list-style: none;
@@ -4704,88 +4848,4 @@ li{
     transform: scale(1.1); 
 }
 
-/*                                 projects photo page ends                    */
-/*                                 footer page starts                    */
-.topFooter{
-    display: flex;
-    justify-content: space-evenly ;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-.topFooter p{
-    font-size: 30px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
-}
-.inputText{
-    width: 430px;
-    font-family: "Ubuntu", sans-serif;
-    height: 45px;
-    padding: 12px 12px;
-
-}
-.inputButton{
-    width: 90px;
-    margin-left: -5px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 15px;
-    height: 35px;
-    background-color: green;
-    color: #fff;
-    border: 0;
-    height: 45px;
-}
-.middleHr{
-    width: 78.5%;
-    margin-left: 135px;
-}
-.middleFooter h1{
-    font-size: 25px;
-    font-family: "Ubuntu", sans-serif;
-    }
-
-    .con{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .address{
-        font-size: 15px;
-        margin-top: 40px;
-    }
-    .contactDetails{
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    .contact{
-        font-weight: 500;
-    }
-    .something {
-        white-space: nowrap;
-    }
-.ul{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 12px;
-}
-
-.ul ul li{
-    font-size: 15px;
-    margin-left: -50px;
-}
-.bottomFooter{
-    display: flex;
-    justify-content: space-between;
-}
-
-.links{
-    font-size: 12px;
-    margin-left: 10px;
-}
-.copyright{
-    font-size: 12px;
-    margin-right: 10px;
-}
-/*                                   footer page ends                       */
 }

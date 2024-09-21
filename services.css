@@ -166,3 +166,37 @@ h4{
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer-info, .footer-links, .footer-policies {
+        flex: 1; /* Make columns equal width on larger screens */
+        margin: 0 15px; /* Margin between columns */
+    }
+
+    .footer-middle {
+        flex-direction: row; /* Side-by-side columns on larger screens */
+    }
+
+    .email-input {
+        width: 300px; /* Slightly wider input on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding: 0 40px; /* Increase padding on large screens */
+    }
+
+    .footer-middle {
+        justify-content: space-around; /* Spread out columns */
+    }
+
+    .footer-info, .footer-links, .footer-policies {
+        flex: 0 0 30%; /* 3 columns with equal width */
+    }
+
+    .email-input {
+        width: 350px; /* Wider input on large screens */
+    }
+}
